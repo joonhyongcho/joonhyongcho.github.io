@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HTML Viewer</title>
+<style>
+  /* Optional: Add some basic styling */
+  #output {
+    border: 1px solid #ccc;
+    margin-top: 20px;
+    padding: 10px;
+  }
+</style>
+</head>
+<body>
+
+<textarea id="inputHtml" rows="10" cols="50">Enter your HTML here...</textarea>
+<button onclick="displayHtml()">Display HTML</button>
+
+<div id="output"></div>
+
+<script>
+function displayHtml() {
+  var htmlString = document.getElementById("inputHtml").value;
+  document.getElementById("output").innerHTML = htmlString;
+}
+
+  // JavaScript code will go here
+</script>
+
+</body>
+</html>
+
