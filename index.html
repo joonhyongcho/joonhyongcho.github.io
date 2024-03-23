@@ -23,18 +23,18 @@
 <script>
 
 function newlineToBreak(inputString) {
-  return inputString.replace(/\n/g, '<br>');
+  return inputString.replace(/\\n/g, '<br>');
 }
 
-// Example usage
 
 function displayHtml() {
   var htmlString = document.getElementById("inputHtml").value;
+  console.log('this is htmlString', htmlString)
   var newString = newlineToBreak(htmlString)
-  document.getElementById("output").innerHTML = htmlString;
+  console.log('this is newstring', newString)
+  document.getElementById("output").innerHTML = newString;
 }
 
-  // JavaScript code will go here
 </script>
 
 </body>
