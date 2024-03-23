@@ -21,8 +21,16 @@
 <div id="output"></div>
 
 <script>
+
+function newlineToBreak(inputString) {
+  return inputString.replace(/\n/g, '<br>');
+}
+
+// Example usage
+
 function displayHtml() {
   var htmlString = document.getElementById("inputHtml").value;
+  var newString = newlineToBreak(htmlString)
   document.getElementById("output").innerHTML = htmlString;
 }
 
